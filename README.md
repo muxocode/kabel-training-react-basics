@@ -1,6 +1,8 @@
 # kabel-training-react-basics
 Curso de iniciación de REACT para KABEL
 
+## 0. Requisitos iniciales
+
 ## 1. Qué es REACT
 ### 1.1 Arquitectura basada en componentes
 ### 1.2 Crear una nueva aplicación
