@@ -29,7 +29,7 @@ Visual Studio permite la instalación de extensiones para hacer de nuestro desar
 
 Instalaremos las siguientes
 
-<div style="font-size:100px;color:red">TODO</div>
+# `TODO`
 
 ### 3. 3. Visual
 ## 1. Qué es REACT
