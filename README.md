@@ -31,7 +31,6 @@ Instalaremos las siguientes
 
 # `TODO`
 
-### 3. 3. Visual
 ## 1. Qué es REACT
 ### 1.1 Arquitectura basada en componentes
 ### 1.2 Crear una nueva aplicación
