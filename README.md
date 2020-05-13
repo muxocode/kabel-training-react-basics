@@ -11,7 +11,8 @@ Para comprobar que se ha instado puede ejecutar lo siguiente
 ```powershell
 node -v
 ```
-Debe sañir la misma versión que acabas de instalarte
+Debe saliir la misma versión que acabas de instalarte
+
 ![Node2](imgs/node2.png)
 ### 0.2. npm
 Con la instalación de Node debería ser suficiente, pero para comprobar que todo está listo ejecuta el siguiente comando
@@ -25,7 +26,9 @@ Se puede utilizar diferentes entornos de desarrollo, pero en este caso y para es
 #### 0.3.1 Visual Studio Extensions
 Visual Studio permite la instalación de extensiones para hacer de nuestro desarrollo una tarea más intuitiva y cómoda. Estas extensiones se encuentran en
 ![V S2](imgs/VS2.png)
+
 Instalaremos las siguientes
+
 <span style="font-size:100px;color:red">TODO</span>
 
 ### 3. 3. Visual
