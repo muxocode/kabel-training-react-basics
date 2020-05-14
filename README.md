@@ -23,13 +23,6 @@ npm -v
 ### 0.3 Visual Studio Code
 Se puede utilizar diferentes entornos de desarrollo, pero en este caso y para este curso utilizaremos Visual Studio Code, que se puede descargar de https://code.visualstudio.com
 ![V S](imgs/VS.png)
-#### 0.3.1 Visual Studio Extensions
-Visual Studio permite la instalación de extensiones para hacer de nuestro desarrollo una tarea más intuitiva y cómoda. Estas extensiones se encuentran en
-![V S2](imgs/VS2.png)
-
-Instalaremos las siguientes
-
-# `TODO`
 
 ## 1. Qué es REACT
 ### 1.1 Arquitectura basada en componentes
