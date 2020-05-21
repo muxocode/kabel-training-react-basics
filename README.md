@@ -44,6 +44,16 @@ React se ha hecho inmensamente popular debido a: facilidad para el desarrollo,  
 
 ### 1.1 Arquitectura basada en componentes
 
+React se basa en el paradigma de programación orientada a componentes, ¿qué es esto? Este paradigma se basa en la modularización, buscando piezas de software reutilizables y que permitan la composición. Es decir, se busca dividir la interfaz de usuario en pequeñas "piezas" denominadas componentes, que combinadas crearán componentes mayores hasta conseguir la interfaz deseada.
+
+Todo ello hace que deba afrontarse el desarrollo de la interfaz con un enfoque de abajo hacia arriba. Comenzando por la identificación de los componentes más pequeños y acabando a nivel de página o pantalla. Con ello se obtienen además las siguientes ventajas:
+
+* **Desarrollo más específico**: comenzar con componentes más pequeños permite centrarse en la funcionalidad específica que debe realizar.
+* **Feedback más efectivo**: es más sencillo identificar los cambios y permite realizar una comunicación más eficiente.
+* **Librerías de componentes**: la reutilización de componentes facilita la creación de librerías de componentes.
+* **Trabajo en paralelo**: varios miembros del equipo pueden trabajar sobre la misma página de forma más eficiente, puesto que cada miembro puede centrarse en unos componentes sin pisar los componentes de otro.
+* **Tests visuales**: se pueden crear exploradores de componentes que permitan ver cada componente y con los que se pueden conseguir automatizar test visuales del estilo de los componentes.
+
 ### 1.2 Crear una nueva aplicación
 
 #### 1.2.1 Partes de la aplicación
