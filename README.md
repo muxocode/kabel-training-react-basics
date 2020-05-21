@@ -4,6 +4,38 @@ Curso de iniciación de REACT para KABEL
 
 ## 0. Requisitos iniciales
 
+Este curso, como ya supones, es enteramente FRONT-END, por lo que vamos a necesitar las siguientes herramientas/frameworks:
+
+### 0.1. Node
+
+Dirigete a la siguiente url <https://nodejs.org> y descárgate la verisón recomended
+![Node](imgs/node.png)
+
+Para comprobar que se ha instado puede ejecutar lo siguiente
+
+```powershell
+node -v
+```
+
+Debe saliir la misma versión que acabas de instalarte
+
+![Node2](imgs/node2.png)
+
+### 0.2. npm
+
+Con la instalación de Node debería ser suficiente, pero para comprobar que todo está listo ejecuta el siguiente comando
+
+```powershell
+npm -v
+```
+
+![Npm1](imgs/npm1.png)
+
+### 0.3 Visual Studio Code
+
+Se puede utilizar diferentes entornos de desarrollo, pero en este caso y para este curso utilizaremos Visual Studio Code, que se puede descargar de <https://code.visualstudio.com>
+![V S](imgs/VS.png)
+
 ## 1. Qué es REACT
 
 ### 1.1 Arquitectura basada en componentes
@@ -78,5 +110,4 @@ Curso de iniciación de REACT para KABEL
 
 * TypeScript
 * <https://es.reactjs.org/docs/thinking-in-react.html>
-* Cómo meter librerías de terceros.
-  
+* Cómo meter librerías de terceros
