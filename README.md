@@ -36,6 +36,30 @@ npm -v
 Se puede utilizar diferentes entornos de desarrollo, pero en este caso y para este curso utilizaremos Visual Studio Code, que se puede descargar de <https://code.visualstudio.com>
 ![V S](imgs/VS.png)
 
+### 0.4 Prueba final
+Vamos a crear un prpyecto de ejemplo de tal manera que comprobemos que todo está bien instalado.
+
+Escoge una carpeta y ejecuta lo siguiente sobre la misma
+```shell
+npx create-react-app mydemo
+```
+
+![Npx2](imgs/npx2.png)
+
+Una vez haya instalado todas las dependencias del proyecto nos metemos en la carpeta recien creada "mydemo"
+Dentro de esa misma carpeta ejecutamos los siguiente
+```shell
+npm start
+```
+
+![Npx3](imgs/npx3.png)
+
+Se nos abrirá de forma automática una ventana en nuestro navegador por defecto http://localhost:3000/ (en caso contrario podemos abrirlo nosotros)
+
+![Npx](imgs/npx.png)
+
+YA ESTAMOS PREPARADOS PARA EMPEZAR EL CURSO
+
 ## 1. Qué es REACT
 
 React es una librería Javascript de interfaz de usuario, desarrollada por Facebook. Esta librería se basa en el paradigma de programación orientada a componentes. Esta librería nos permitirá realizar componentes reutilizables que se pueden combinar para crear componentes de un nivel superior, hasta conformar una web. Lo que permite desarrollar interfaces de usuario de una forma más escalable que simplemente con HTML, CSS y Javascript cada uno por su lado.
