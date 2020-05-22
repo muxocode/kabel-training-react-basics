@@ -37,9 +37,11 @@ Se puede utilizar diferentes entornos de desarrollo, pero en este caso y para es
 ![V S](imgs/VS.png)
 
 ### 0.4 Prueba final
+
 Vamos a crear un prpyecto de ejemplo de tal manera que comprobemos que todo está bien instalado.
 
 Escoge una carpeta y ejecuta lo siguiente sobre la misma
+
 ```shell
 npx create-react-app mydemo
 ```
@@ -48,6 +50,7 @@ npx create-react-app mydemo
 
 Una vez haya instalado todas las dependencias del proyecto nos metemos en la carpeta recien creada "mydemo"
 Dentro de esa misma carpeta ejecutamos los siguiente
+
 ```shell
 npm start
 ```
