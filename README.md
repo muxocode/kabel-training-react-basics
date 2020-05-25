@@ -85,6 +85,51 @@ Todo ello hace que deba afrontarse el desarrollo de la interfaz con un enfoque d
 
 ### 1.2 Crear una nueva aplicación
 
+Para facilitarnos la tarea de comenzar una aplicación desde cero, Facebook nos proporciona un boilerplate con todo lo necesario para trabajar con React, permitiendonos incluso configurar aspectos como el uso de typescript en la aplicación.
+
+Podemos ejecutar la creación de la aplicación de la siguiente forma:
+
+```shell
+npx create-react-app mydemo
+```
+
+o
+
+```shell
+npm init react-app my-app
+```
+
+Incluso si lo deseamos, con yarn:
+
+```shell
+yarn create react-app my-app
+```
+
+Si el comando se ha ejecutado correctamente, en el directorio sobre el que se lanza el comando, se creará un directorio my-app con la siguiente estructura:
+
+```bash
+my-app
+├── README.md
+├── node_modules
+├── package.json
+├── .gitignore
+├── public
+│   ├── favicon.ico
+│   ├── index.html
+│   ├── logo192.png
+│   ├── logo512.png
+│   ├── manifest.json
+│   └── robots.txt
+└── src
+    ├── App.css
+    ├── App.js
+    ├── App.test.js
+    ├── index.css
+    ├── index.js
+    ├── logo.svg
+    └── serviceWorker.js
+```
+
 #### 1.2.1 Partes de la aplicación
 
 ### 1.3 Componentes
