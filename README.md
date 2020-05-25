@@ -219,7 +219,32 @@ De esta forma, estamos diciendo que este componente tiene una dependencia con "h
 
 > **_IMPORTANTE:_**  El atributo **style** no se recomienda como medio para estilizar elementos, es mejor el uso de `className`. El atributo **style** se suele utilizar para añadir estilos calculados dinamicamente durante el tiempo de ejecución.
 
-Los elementos DOM disponen de una propiedad `style` que permite la introducción de estilo consistente con la propiedad `style` de cualquier elemento HTML
+Los elementos DOM disponen de una propiedad `style` que permite la introducción de estilo. Esta forma de estilizar elementos es consistente con la propiedad `style` de cualquier elemento HTML, sin embargo, tiene una diferencia y es que en React la propiedad `style`admite un objeto Javascript, en estilo camelCase, en lugar de un string CSS.
+
+```jsx
+const h1Style = {
+  color: 'blue',
+  backgroundImage: 'url(' + imgUrl + ')',
+};
+
+function Welcome() {
+  return <h1 style={h1Style}>Hello World!</h1>;
+}
+```
+
+React adicionalmente añade el sufijo "px" a las propiedades numéricas que afecten a tamaños. Si se desea cambiar el tipo de unidad, el valor deberá representarse como un string con la unidad deseada.
+
+```jsx
+// Estilo resultante: '10px'
+<div style={{ height: 10 }}>
+  Hello World!
+</div>
+
+// Estilo resultante: '10%'
+<div style={{ height: '10%' }}>
+  Hello World!
+</div>
+```
 
 #### 1.3.4 imágenes
 
