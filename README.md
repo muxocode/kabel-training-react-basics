@@ -105,6 +105,8 @@ Incluso si lo deseamos, con yarn:
 yarn create react-app my-app
 ```
 
+#### 1.2.1 Partes de la aplicación
+
 Si el comando se ha ejecutado correctamente, en el directorio sobre el que se lanza el comando, se creará un directorio my-app con la siguiente estructura:
 
 ```bash
@@ -130,7 +132,13 @@ my-app
     └── serviceWorker.js
 ```
 
-#### 1.2.1 Partes de la aplicación
+Las diferentes partes que podemos encontrar son:
+
+* readme.md: Archivo markdown con la descripción de los comandos disponibles.
+* node_modules: Carpeta en la que se instalan todos los paquetes de los que depende la solución.
+* package.json: Archivo de configuración de npm, en él se encuentra listadas las depencias y definidos los scripts de npm disponibles.
+* public: en esta carpeta encontraremos ficheros que se publicaran con la aplicación. Por ejemplo, si la aplicación corre en localhost:3000, podremos encontrar <http://localhost:3000/robots.txt> el fichero que se encuentra en la carpeta public.
+* src: este será el directorio en el que nos encontremos el código de la aplicación. Aunque en este boilerplate está todo en la raíz de src, lo más común es tener diferentes directorios para organizarlo, por ejemplo: directorio styes, directorio components.
 
 ### 1.3 Componentes
 
