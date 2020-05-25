@@ -142,7 +142,49 @@ Las diferentes partes que podemos encontrar son:
 
 ### 1.3 Componentes
 
+Los componentes, como ya se ha visto, son la piedra angular en torno a la que gira todo. No hay React sin componentes.
+
 #### 1.3.1 Qué es un componente
+
+Formalmente, ya se ha dado una definición de componente, son piezas de la interfaz de usuario con las características de ser independientes, reutilizables, combinables y aisladas. Sin embargo, qué es un componente cuando hablamos de React.
+
+React ha simplificado mucho los componentes, estos pasan a ser funciones que aceptan unas entradas (denominadas props) y que devuelven unos elementos que describen qué es lo que debe mostrarse en pantalla.
+
+Veamos un componente React muy sencillo:
+
+```jsx
+function Welcome() {
+  return <h1>Hello, World!</h1>;
+}
+```
+
+Como vemos, tenemos una función "Welcome", es decir, el componente Welcome, el cuál indica que debe mostrarse en pantalla una etiqueta H1 con el texto "Hello, World!".
+
+Podemos complicar este componente un poco más para que cambie en base a una entrada en la función, sin entrar en detalles del paso de parámetros que se abordan en el punto 2.
+
+```jsx
+function Welcome(props) {
+  return <h1>Hello, {props.name}!</h1>;
+}
+```
+
+Este componente estará renderizando una etiqueta H1 con un mensaje que variará en función de la entrada.
+
+Los componentes, además de etiquetas y elementos de HTML, pueden representar otros componentes de React:
+
+```jsx
+function WelcomeFernando() {
+  return <Welcome name="Fernando" />;
+}
+```
+
+o
+
+```jsx
+const WelcomeFernando = <Welcome name="Fernando" />;
+```
+
+El componente WelcomeFernando está mostrando el componente Welcome de forma concreta, pasándole como name el string "Fernando".
 
 #### 1.3.2 css + className
 
