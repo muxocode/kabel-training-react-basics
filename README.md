@@ -188,7 +188,38 @@ El componente WelcomeFernando está mostrando el componente Welcome de forma con
 
 #### 1.3.2 css + className
 
+Si deseamos aplicar estilos en nuestros componentes o elementos de HTML, naturalmente nos sale escribir `class="cssClassName"`. Sin embargo, esto no ocurre en React, si utilizamos esto obtendremos un error.
+
+La forma correcta de utilizarlo será la siguiente `className="cssClassName"`
+
+```jsx
+const element = <div className="div-styled" />;
+```
+
+Además, podemos incorporar archivos CSS con estilo a nuestros componentes. Es decir, podemos tener un archivo con las clases CSS necesarias e importarlo en el componente que se utilicen.
+
+```jsx
+import React from 'react';
+import 'header.css'
+
+function CustomHeader() {
+    return (
+        <header className="custom-header-style">
+            <p>Custom header!</p>
+        </header>
+    );
+}
+
+export default CustomHeader;
+```
+
+De esta forma, estamos diciendo que este componente tiene una dependencia con "header.css".
+
 #### 1.3.3 style
+
+> **_IMPORTANTE:_**  El atributo **style** no se recomienda como medio para estilizar elementos, es mejor el uso de `className`. El atributo **style** se suele utilizar para añadir estilos calculados dinamicamente durante el tiempo de ejecución.
+
+Los elementos DOM disponen de una propiedad `style` que permite la introducción de estilo consistente con la propiedad `style` de cualquier elemento HTML
 
 #### 1.3.4 imágenes
 
