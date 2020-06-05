@@ -313,7 +313,7 @@ function GetGreeting(user) {
 function MyCustomList(props) {
   const contentList = props.contentList;
   return (
-    <ul>{contentList.map(content => <li>{content}</li>)}<ul>
+    <ul>{contentList.map(content => <li>{content}</li>)}</ul>
   );
 }
 ```
