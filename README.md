@@ -248,6 +248,29 @@ React adicionalmente añade el sufijo "px" a las propiedades numéricas que afec
 
 #### 1.3.4 imágenes
 
+Gracias a las utilidades webpack, incorporadas en el create-react-app, utilizar assets estáticos, como imagenes o fuentes, se realiza importando los ficheros como si eestos fuesen un módulo de Javascript. Al realizar la importación lo que obtenemos es un string con el path final a referenciar, ya sea en un atributo src o en un href.
+
+```jsx
+import React from 'react';
+import logo from './logo.png';
+console.log(logo); // /logo.84287d09.png
+function Header() {
+  // Import result is the URL of your image
+  return <img src={logo} alt="Logo" />;
+}
+export default Header;
+```
+
+Además, en el create-react-app, tenemos una utilidad adicional que nos permite reducir el número de peticiones de imágenes al servidor. Para ello, todas las imagenes (bmp, gif, jpg, jpeg y png) menores de 10.000 bytes (por defecto) se convierten a formato [data URI](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Data_URIs).
+
+Este efecto también funciona en CSS con las rutas relativas (las que empiezan por ./).
+
+```css
+.Logo {
+  background-image: url(./logo.png);
+}
+```
+
 ### 1.4 Código en react
 
 #### 1.4.1 if
