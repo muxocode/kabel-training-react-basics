@@ -273,9 +273,50 @@ Este efecto también funciona en CSS con las rutas relativas (las que empiezan p
 
 ### 1.4 Código en react
 
-#### 1.4.1 if
+Con lo que se ha visto hasta ahora, se puede apreciar la curiosa sintaxis que tiene React. Se pueden apreciar etiquetas HTML (h1, por ejemplo) y también se puede ver código javascript (declaración de funciones). Esta sintaxis se denomina JSX y es una extensión de la sintaxis de Javascript para el renderizado de plantillas. A diferencia de otros frameworks y librerías que extienden el html con funcionalidad para el renderizado de plantillas, React lo hace al contrario, haciendo que no sea necesarío aprender nuevas funcionalidades y aportando toda la potencia de Javascript a nuestras plantillas.
 
-#### 1.4.2 for
+JSX acopla ligeramente unidades que hasta ahora se encontraban separada (js y html), sin embargo se centra en la separación de interes lógicos. Haciendo componentes más específicos y más fácilmente mantenibles.
+
+> **_IMPORTANTE:_** Debido a que JSX es una extensión de Javascript, la convención de nomenclatura es camelCase en los atributos HTML. Por ejemplo, `tabindex` pasa a ser `tabIndex`.
+
+#### 1.4.1 Expresiones en JSX
+
+La sintaxis JSX permite incorporar expresiones de Javascript si estas van entre llaves. Dentro de las llaves puede ir cualquier expresión, una suma, una variable o una llamada a una función.
+
+```jsx
+function formatName(user) {
+  return user.firstName + ' ' + user.lastName;
+}
+
+const user = {
+  firstName: 'Harper',
+  lastName: 'Perez'
+};
+
+const element = (
+  <h1>
+    Hello, {formatName(user)}!
+  </h1>
+);
+```
+
+Además, JSX es también una expresión por sí misma. Por lo tanto podremos utilizar expresiones de control (if, for, while), pueden asignarse a variables, pueden ser argumentos de otro función y pueden retornarse desde funciones.
+
+```jsx
+function GetGreeting(user) {
+  if (user) {
+    return <h1>Hello, {formatName(user)}!</h1>;
+  }
+  return <h1>Hello, Stranger.</h1>;
+}
+
+function MyCustomList(props) {
+  const contentList = props.contentList;
+  return (
+    <ul>{contentList.map(content => <li>{content}</li>)}<ul>
+  );
+}
+```
 
 ### 1.5 Ejercicio1
 
